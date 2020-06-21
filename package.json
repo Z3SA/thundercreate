@@ -1,0 +1,23 @@
+{
+  "name": "thundercreate",
+  "version": "1.0.0",
+  "description": "Grid system and simple CSS styles for HTML pages",
+  "main": "index.js",
+  "author": {
+    "name": "Nikita \"Z3SA\" Bukin",
+    "email": "me@z3sa.ru"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "devDependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "node ./scripts/build.js"
+  }
+}
