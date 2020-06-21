@@ -8,16 +8,22 @@
     "email": "me@z3sa.ru"
   },
   "license": "MIT",
-  "dependencies": {
-    "node-sass": "^4.14.1"
-  },
   "devDependencies": {
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "node-sass": "^4.14.1"
   },
   "files": [
     "/dist"
   ],
+  "homepage": "https://github.com/Z3SA/thundercreate",
   "scripts": {
     "build": "node ./scripts/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Z3SA/thundercreate"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
