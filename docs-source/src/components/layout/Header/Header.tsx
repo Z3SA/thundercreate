@@ -1,13 +1,13 @@
-import Link from 'next/link';
 import styles from './Header.module.scss';
+import { RoutingLink } from 'components/common';
 
 export function Header() {
   return (
     <header className={styles.Header}>
-      <Link href="/">Main</Link>
-      <Link href="/about">About</Link>
-      <Link href="/get-started">Get started</Link>
-      <Link href="/changelog">Changelog</Link>
+      <RoutingLink href="/">Main</RoutingLink>
+      <RoutingLink href="/about">About</RoutingLink>
+      <RoutingLink href="/get-started">Get started</RoutingLink>
+      <RoutingLink href="/changelog">Changelog</RoutingLink>
     </header>
   );
 }
