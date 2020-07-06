@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "build": "next build && next export",
+    "start": "next start",
+    "rebuild": "rm yarn.lock && rm -rf node_modules && yarn"
   },
   "dependencies": {
     "fs": "^0.0.1-security",
