@@ -1,0 +1,19 @@
+.About {
+  width: 100%;
+  margin: 50px 0;
+  font-size: 1.33rem;
+
+  h3 {
+    @media (max-width: 350px) {
+      font-size: 26px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    font-size: 1.1rem;
+  }
+
+  @media (max-width: 350px) {
+    font-size: 1rem;
+  }
+}

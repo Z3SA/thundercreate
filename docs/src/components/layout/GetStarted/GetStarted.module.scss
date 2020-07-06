@@ -1,0 +1,44 @@
+.GetStarted {
+  width: 100%;
+  margin: 50px 0;
+
+  h3 {
+    @media (max-width: 350px) {
+      font-size: 26px;
+    }
+  }
+
+  &__title {
+    margin: 45px 0;
+  }
+
+  &__color {
+    background: #333;
+    color: #fff;
+    padding: 0 3px;
+  }
+
+  &__grid-example {
+    > div {
+      padding: 5px;
+    }
+
+    span {
+      display: block;
+      background: rgba(0, 0, 0, 0.1);
+      text-align: center;
+      font-size: 12px;
+      padding: 5px 0;
+    }
+  }
+
+  &__code {
+    background: rgba(0, 0, 0, 0.1);
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 5px 15px;
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+  }
+}

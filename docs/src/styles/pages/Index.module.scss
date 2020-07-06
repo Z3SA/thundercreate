@@ -1,0 +1,19 @@
+.Index {
+  display:         flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 100vh;
+  padding: 50px 10px;
+
+  @media (max-width: 780px) {
+    padding: 50px 30px;
+  }
+
+  @media (max-width: 450px) {
+    padding: 20px;
+  }
+}
