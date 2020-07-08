@@ -1,15 +1,10 @@
-const { 
-  PHASE_DEVELOPMENT_SERVER, 
-  PHASE_PRODUCTION_SERVER,
-} = require('next/constants');
+const repoNameURIPrefix =
+  process.env.NODE_ENV === 'production' ? '/thundercreate' : '';
 
-module.exports = phase => {
-  const assetPrefix = (phase === PHASE_DEVELOPMENT_SERVER || phase === PHASE_PRODUCTION_SERVER) 
-    ? ''
-    : '/thundercreate';
-
-  return {
-    assetPrefix,
-    env: { ASSET_PREFIX: assetPrefix },
-  };
+module.exports = {
+  assetPrefix: repoNameURIPrefix,
+  env: {
+    linkPrefix: repoNameURIPrefix,
+  },
+  generateBuildId: async () => 'current',
 };
