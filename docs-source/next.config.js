@@ -1,8 +1,15 @@
-const assetPrefix = process.env.BUILDING_FOR_NOW ? '/thundercreate' : '';
+const { 
+  PHASE_DEVELOPMENT_SERVER, 
+  PHASE_PRODUCTION_SERVER,
+} = require('next/constants');
 
-module.exports = {
-  assetPrefix,
-  env: {
-    ASSET_PREFIX: assetPrefix,
-  },
-}
+module.exports = phase => {
+  const assetPrefix = (phase === PHASE_DEVELOPMENT_SERVER || phase === PHASE_PRODUCTION_SERVER) 
+    ? ''
+    : '/thundercreate';
+
+  return {
+    assetPrefix,
+    env: { ASSET_PREFIX: assetPrefix },
+  };
+};
