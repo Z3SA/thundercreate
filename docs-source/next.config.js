@@ -1,6 +1,8 @@
+const assetPrefix = process.env.BUILDING_FOR_NOW ? '/thundercreate' : '';
+
 module.exports = {
-  assetPrefix: process.env.BASE_PATH || '',
-  publicRuntimeConfig: {
-    basePath: process.env.BASE_PATH || '',
+  assetPrefix,
+  env: {
+    ASSET_PREFIX: assetPrefix,
   },
 }

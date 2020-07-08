@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import styles from './Index.module.scss';
+import { RoutingLink } from 'components/common';
 
 export function Index() {
   return (
@@ -8,7 +8,7 @@ export function Index() {
       <div className="cont">
         <div className="col100p col20s">
           <span className={`btn ${styles.Index__btn}`}>
-            <Link href="/get-started">Get started</Link>
+            <RoutingLink href="/get-started">Get started</RoutingLink>
           </span>
         </div>
 
