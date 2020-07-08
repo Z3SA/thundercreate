@@ -2230,7 +2230,7 @@ eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/
 
 /***/ }),
 
-/***/ 3:
+/***/ 2:
 /*!***************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fnikita%2FDesktop%2FProjects%2Fthundercreate%2Fdocs-source%2Fsrc%2Fpages%2Findex.tsx ***!
   \***************************************************************************************************************************************************************/
@@ -2253,4 +2253,4 @@ eval("module.exports = dll_ec7d9c0249b2ef52b74c;//# sourceURL=[module]\n//# sour
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
