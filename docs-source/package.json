@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
-    "publish:out": "yarn build && rm -rf ../docs && cp -r ./out ../docs",
+    "publish:out": "yarn build && rm -rf ../docs && cp -r ./out ../docs && touch ../docs/.nojekyll",
     "start": "next start",
     "rebuild": "rm yarn.lock && rm -rf node_modules && yarn"
   },
